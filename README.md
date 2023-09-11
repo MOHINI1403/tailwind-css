@@ -17,3 +17,31 @@
   * On any button which could include the toggle color value it's onClick functionality is given value : document.body.classList.toggle('dark')
   * Lastly include this within the end of the HTML File
   [a link](https://gist.github.com/adrianhajdin/ae10e2dd6ee5d51fc5b31437f73cf014#file-script-js)
+
+
+## Installation of TailWindCSS With Vite
+   ### Terminal
+       npm create vite@latest my-project-name -- --template react
+   ### Terminal
+       npm install tailwindcss postcss autprefixer
+       npx tailwindcss init -p
+   ### tailwind.config.js
+
+       /** @type {import('tailwindcss').Config} */
+        export default {
+        content: [
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+      ],
+      theme: {
+        extend: {},
+      },
+      plugins: [],
+    }
+  ### index.css
+      @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+ ### To run the Project
+     npm run dev
+       
